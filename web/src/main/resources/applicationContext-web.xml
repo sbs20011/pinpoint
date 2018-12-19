@@ -190,4 +190,7 @@
         <property name="queueCapacity" value="#{pinpointWebProps['web.servermap.appender.worker.queueSize'] ?: 1024}"/>
         <property name="threadNamePrefix" value="Pinpoint-Server-Info-Appender-"/>
     </bean>
+    
+    <!-- 알람 bean 추가 -->
+    <bean id="AlarmMessageSenderImple" class="com.navercorp.pinpoint.web.alarm.AlarmMessageSenderImple"/>
 </beans>
